@@ -1,0 +1,225 @@
+{
+    "metadata": {
+        "streamsync_version": "0.3.0"
+    },
+    "components": {
+        "root": {
+            "id": "root",
+            "type": "root",
+            "content": {
+                "appName": "Hello"
+            },
+            "parentId": null,
+            "position": 0
+        },
+        "bb4d0e86-619e-4367-a180-be28ab6059f4": {
+            "id": "bb4d0e86-619e-4367-a180-be28ab6059f4",
+            "type": "page",
+            "content": {
+                "pageMode": "",
+                "key": "main"
+            },
+            "parentId": "root",
+            "position": 0
+        },
+        "84378aea-b64c-49a3-9539-f854532279ee": {
+            "id": "84378aea-b64c-49a3-9539-f854532279ee",
+            "type": "header",
+            "content": {
+                "text": "Expert Tech Consultation",
+                "emptinessColor": "#ffffff"
+            },
+            "parentId": "bb4d0e86-619e-4367-a180-be28ab6059f4",
+            "position": 0
+        },
+        "8vnm3xywj1drfqtc": {
+            "id": "8vnm3xywj1drfqtc",
+            "type": "section",
+            "content": {
+                "title": ""
+            },
+            "parentId": "bb4d0e86-619e-4367-a180-be28ab6059f4",
+            "position": 1,
+            "handlers": {},
+            "visible": true
+        },
+        "nxyehcdz9c1dmqt7": {
+            "id": "nxyehcdz9c1dmqt7",
+            "type": "button",
+            "content": {
+                "text": "Send Message"
+            },
+            "parentId": "ig760tlo7t3i2jjv",
+            "position": 2,
+            "handlers": {
+                "ss-click": "on_send_message"
+            },
+            "visible": true
+        },
+        "ryuyb2baweob9ov9": {
+            "id": "ryuyb2baweob9ov9",
+            "type": "repeater",
+            "content": {
+                "repeaterObject": "@{repeater_messages}",
+                "keyVariable": "itemId",
+                "valueVariable": "item"
+            },
+            "parentId": "8vnm3xywj1drfqtc",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "x3xrnsvpl4lv53ip": {
+            "id": "x3xrnsvpl4lv53ip",
+            "type": "section",
+            "content": {
+                "title": ""
+            },
+            "parentId": "ryuyb2baweob9ov9",
+            "position": 0,
+            "handlers": {},
+            "visible": "visible"
+        },
+        "gdlxqoknw3dnqrxb": {
+            "id": "gdlxqoknw3dnqrxb",
+            "type": "columns",
+            "content": {},
+            "parentId": "x3xrnsvpl4lv53ip",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "qwa32w929h6mxlep": {
+            "id": "qwa32w929h6mxlep",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "parentId": "gdlxqoknw3dnqrxb",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "bomymdtcmma3p567": {
+            "id": "bomymdtcmma3p567",
+            "type": "image",
+            "content": {
+                "caption": "",
+                "maxWidth": "100",
+                "maxHeight": "100",
+                "src": "@{item.image}"
+            },
+            "parentId": "qwa32w929h6mxlep",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "gnhliy3r0egeq5fa": {
+            "id": "gnhliy3r0egeq5fa",
+            "type": "column",
+            "content": {
+                "width": "3"
+            },
+            "parentId": "gdlxqoknw3dnqrxb",
+            "position": 1,
+            "handlers": {},
+            "visible": true
+        },
+        "u2979gopxeo3m50p": {
+            "id": "u2979gopxeo3m50p",
+            "type": "text",
+            "content": {
+                "text": "@{item.content}\n",
+                "useMarkdown": "yes"
+            },
+            "parentId": "gnhliy3r0egeq5fa",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "e0immsqv9mo2cifc": {
+            "id": "e0immsqv9mo2cifc",
+            "type": "timer",
+            "content": {},
+            "parentId": "8vnm3xywj1drfqtc",
+            "position": 2,
+            "handlers": {
+                "ss-tick": "update_timer"
+            },
+            "visible": true
+        },
+        "3bgpfc84ky0da61v": {
+            "id": "3bgpfc84ky0da61v",
+            "type": "columns",
+            "content": {},
+            "parentId": "8vnm3xywj1drfqtc",
+            "position": 1,
+            "handlers": {},
+            "visible": true
+        },
+        "0hqt0syqggrmdell": {
+            "id": "0hqt0syqggrmdell",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "parentId": "3bgpfc84ky0da61v",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "5xuapzri07tnstir": {
+            "id": "5xuapzri07tnstir",
+            "type": "image",
+            "content": {
+                "caption": "",
+                "maxWidth": "100",
+                "maxHeight": "100",
+                "src": "static/human_smaller.png"
+            },
+            "parentId": "0hqt0syqggrmdell",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "ig760tlo7t3i2jjv": {
+            "id": "ig760tlo7t3i2jjv",
+            "type": "column",
+            "content": {
+                "width": "3"
+            },
+            "parentId": "3bgpfc84ky0da61v",
+            "position": 1,
+            "handlers": {},
+            "visible": true
+        },
+        "tfpz75dowjh7itwy": {
+            "id": "tfpz75dowjh7itwy",
+            "type": "text",
+            "content": {
+                "text": "@{item.content}\n",
+                "useMarkdown": "yes"
+            },
+            "parentId": "ig760tlo7t3i2jjv",
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "2rwhq6bpf2rg2oaz": {
+            "id": "2rwhq6bpf2rg2oaz",
+            "type": "textareainput",
+            "content": {
+                "label": "",
+                "rows": "5"
+            },
+            "parentId": "ig760tlo7t3i2jjv",
+            "position": 1,
+            "handlers": {},
+            "binding": {
+                "eventType": "ss-change",
+                "stateRef": "user_message"
+            },
+            "visible": true
+        }
+    }
+}

@@ -1,0 +1,2 @@
+openai==1.10.0
+streamsync==0.3.0
